@@ -1,0 +1,295 @@
+/* The Modal (background) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.create-modal{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: -30px;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.7);
+}
+  
+.create-content {
+    background-color: #fefefe;
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    height: 75vh;
+}
+.content-header{
+    font-size: 35px;
+    color: rgb(113, 111, 111);
+    margin-top: -8px;
+    margin-bottom: -15px;
+    padding-bottom: -10px;
+    
+}
+.content-header hr{
+    margin-top: -25px;
+}
+.content-header p{
+    font-family: 'Arial';
+}
+textarea {
+    height: 300px;
+    background-color: rgb(231, 230, 230);
+    width: 100%;
+}
+
+.create-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.create-box label {
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Arial';
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.create-box button {
+    width: 130px;
+    height: 40px;
+    background-color: rgb(68, 202, 68);
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    align-self: center;
+    padding-right: 10px;
+    border: none;
+}
+
+.create-box input {
+    width: 99.1%;
+    height: 40px;
+    border: none;
+    background-color: rgb(231, 230, 230);
+    font-size: 16px;
+    padding-left: 10px;
+    margin-bottom: 22px;        
+}
+
+
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    max-width: 25%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+}
+
+.sign-up-heading,
+.sign-in-heading{
+    font-size: 35px;
+    color: rgb(113, 111, 111);
+    margin-top: -8px;
+    margin-bottom: -30px;
+}
+.sign-up-heading p{
+    font-family: 'Arial';
+    margin-left: 0px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.sign-up-btn,
+.sign-in-btn{
+    color: white;
+    background-color: green;
+    padding: 1.5%;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    margin-right: -12px;
+}
+
+.sign-up-box,
+.sign-in-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 38px;
+    margin-top: -10px;
+    margin-right: 10px;
+}
+
+.sign-up-box input,
+.sign-in-box input{
+    width: 100%;
+    border: none;
+    background-color: rgb(231, 230, 230);
+    font-size: 20px;
+    margin-bottom: 10px;
+    height: 40px;
+    font-size: 16px;
+    padding-left: 10px;
+    font-weight: 400;
+}
+.sign-up-box label,
+.sign-in-box label{
+    font-weight: 500;
+    font-size: 16px;
+    font-family: 'Arial'; 
+}
+
+body {
+    margin: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#main-header {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section {
+    text-align: left;
+}
+
+.main-heading {
+    font-family: 'Montez', cursive;
+    color: blue;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 10px;
+}
+
+p {
+    font-family: 'Ubuntu Mono', monospace;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.right-section {
+    display: flex;
+    align-items: center;
+}
+.right-section button{
+    border-color: #fff;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+
+button.sign-up,
+button.sign-in {
+    background-color: blue;
+    color: #fff;
+    margin-right: 10px;
+}
+
+
+.centered-buttons {
+    display: flex;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.centered-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: goldenrod;
+    border-color: white;
+}
+
+.input-container {
+    margin-bottom: 20px;
+}
+.return-sign-up h3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial';
+    font-size: 16px;
+    margin-bottom: -8px;
+}
+
+/*  media query  */
+
+@media only screen and (max-width: 1000px){
+    .modal-content{
+        max-width: 32%;
+    }
+}
+@media only screen and (max-width: 780px){
+    .modal-content{
+        max-width: 40%;
+    }
+}  
+@media only screen and (max-width: 640px){
+    .modal-content{
+        max-width: 45%;
+    }
+}
+@media only screen and (max-width: 640px){
+    .modal-content{
+        max-width: 55%;
+    }
+}
+@media only screen and (max-width: 450px){
+    .modal-content{
+        max-width: 65%;
+    }
+} 
+@media only screen and (max-width: 650px){
+    .create-content{
+        max-width: 70%;
+    }
+} 
